@@ -1,4 +1,4 @@
-namespace Exercise3
+namespace PED_Exam
 {
     public partial class Form1 : Form
     {

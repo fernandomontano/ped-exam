@@ -1,4 +1,4 @@
-namespace Exercise1
+namespace PED_Exam
 {
     internal static class Program
     {
