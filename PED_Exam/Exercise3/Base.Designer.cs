@@ -62,7 +62,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(236)))), ((int)(((byte)(225)))));
-            this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.ClientSize = new System.Drawing.Size(1443, 773);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI Variable Display", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -77,7 +77,8 @@
         }
 
         #endregion
-        private PictureBox pictureBox1;
-        protected Panel panel1;
+
+        public PictureBox pictureBox1;
+        public Panel panel1;
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Exercise3
 {
-    class Graph
+    public class Graph
     {
         private List<Vertex> _vertex;
 

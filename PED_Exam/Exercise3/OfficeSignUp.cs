@@ -13,9 +13,10 @@ namespace Exercise3
 {
     public partial class OfficeSignUp : Base
     {
-        public static Hashtable AdjacencyTable = new Hashtable();
+        public static Hashtable AdjacencyHash = new();
         public static Vertex[] VertexValues = new Vertex[8];
-        private List<string> IdValues = new List<string>();
+        public static Graph GraphValues = new Graph();
+        public List<string> IdValues = new();
 
         public int I = 0;
 
@@ -23,12 +24,20 @@ namespace Exercise3
         {
             InitializeComponent();
         }
+
         private void btnContinue_Click(object sender, EventArgs e)
         {
+            try
+            {
                 if (txtAddress.Text == "" || txtCode.Text == "" || txtContact.Text == "" || txtEmail.Text == "" ||
-                    txtResponsible.Text == "" || !Valid())
+                    txtResponsible.Text == "")
                 {
                     MessageBox.Show("Lo siento, debes llenar todos los campos antes de darle continuar.", "Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (!Valid())
+                {
+                    MessageBox.Show("Lo siento, el código de cada sucursal debe ser único.", "Error",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else if (I < 8)
@@ -37,14 +46,19 @@ namespace Exercise3
                     VertexValues[I] = new Vertex(new Office(txtAddress.Text, txtCode.Text, txtResponsible.Text,
                         int.Parse(txtContact.Text), txtEmail.Text));
 
-                    MessageBox.Show($"Valores añadidos con éxito a la Sucursal N° {I+1}!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($"Valores añadidos con éxito a la Sucursal N° {I + 1}!", "Exito",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     Iterator();
                 }
+
                 if (I == 8)
-                {
                     Iterator();
-                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Hubo un error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
         }
 
@@ -53,13 +67,22 @@ namespace Exercise3
             if (I == 8)
             {
                 CreateArcs();
-                btnContinue.Text = "Mostrar grafo creado";
+                btnContinue.Visible = false;
+                btnConsultar.Visible = true;
+
+                // añado los valores de mis vértices al grafo, lo pude haber hecho directamente a la hora de pedir los datos pero, considero que es un poco más cómodo todos de una vez.
+                for (int i = 0; i <= 7; i++)
+                {
+                    GraphValues.AddVertex(VertexValues[i]);
+                }
             }
             else
+            {
                 I++;
-                
-                
-            lblSucursal.Text = $"Sucursal N° {I + 1}";
+                if (I != 8)
+                    lblSucursal.Text = $"Sucursal N° {I + 1}";
+            }
+
         }
 
         private void CreateArcs() // los he creado de forma Manual y por medio de listas ya que a la hora de crearlo en una tabla Hash, necesito filtrarlo por llaves.
@@ -78,19 +101,19 @@ namespace Exercise3
             // Arcos (Aristas) de la sucursal 2.
             #region Arcos sucursal 2
             VertexValues[1].AddArc(new Arc(VertexValues[1], VertexValues[0], 3)); // 2 -> 1
+            VertexValues[1].AddArc(new Arc(VertexValues[1], VertexValues[1], 0)); // 2 -> 1
             VertexValues[1].AddArc(new Arc(VertexValues[1], VertexValues[2], 5)); // 2 a 3
             VertexValues[1].AddArc(new Arc(VertexValues[1], VertexValues[3], 4)); // 2 a 4.
             VertexValues[1].AddArc(new Arc(VertexValues[1], VertexValues[4], 0)); // 2 a 5.
             VertexValues[1].AddArc(new Arc(VertexValues[1], VertexValues[5], 0)); // 2 a 6.
-            VertexValues[1].AddArc(new Arc(VertexValues[1], VertexValues[6], 0)); // 2 a 7.
             VertexValues[1].AddArc(new Arc(VertexValues[1], VertexValues[7], 0)); // 2 a 8.
-
             #endregion
 
             // Arcos (Aristas) de la sucursal 3.
             #region Arcos sucursal 3
             VertexValues[2].AddArc(new Arc(VertexValues[2], VertexValues[0], 0));
             VertexValues[2].AddArc(new Arc(VertexValues[2], VertexValues[1], 5));
+            VertexValues[2].AddArc(new Arc(VertexValues[2], VertexValues[2], 0));
             VertexValues[2].AddArc(new Arc(VertexValues[2], VertexValues[3], 0));
             VertexValues[2].AddArc(new Arc(VertexValues[2], VertexValues[4], 0));
             VertexValues[2].AddArc(new Arc(VertexValues[2], VertexValues[5], 0));
@@ -158,23 +181,20 @@ namespace Exercise3
             VertexValues[7].AddArc(new Arc(VertexValues[7], VertexValues[7], 0));
             #endregion
 
+            for (var i = 0; i < 8; i++)
+                AdjacencyHash.Add(VertexValues[i].Value.IdCode, VertexValues[i].ArcsList);
 
-            foreach (var distances in VertexValues[0].ArcsList)
-            {
-                MessageBox.Show(distances.Distance.ToString());
-            }
+            
 
-
-            for (int i = 0; i < 8; i++)
-            {
-                AdjacencyTable.Add($"{VertexValues[i].Value.IdCode}", $"{VertexValues[i].ArcsList}");
-            }
         }
 
-        private bool Valid()
+        private bool Valid() => IdValues.All(id => txtCode.Text != id);
+
+        private void btnConsultar_Click(object sender, EventArgs e)
         {
-            return IdValues.All(id => txtCode.Text != id);
+            var enterConsult = new Consult();
+            enterConsult.Show();
+            this.Hide();
         }
-
     }
 }
