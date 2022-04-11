@@ -136,27 +136,28 @@ namespace Exercise3
 
             // Arcos (Aristas) de la sucursal 7.
             #region Arcos sucursal 7
-            VertexValues[6].AddArc(new Arc(VertexValues[5], VertexValues[0], 8));
-            VertexValues[6].AddArc(new Arc(VertexValues[5], VertexValues[1], 0));
-            VertexValues[6].AddArc(new Arc(VertexValues[5], VertexValues[2], 0));
-            VertexValues[6].AddArc(new Arc(VertexValues[5], VertexValues[3], 0));
-            VertexValues[6].AddArc(new Arc(VertexValues[5], VertexValues[4], 5));
-            VertexValues[6].AddArc(new Arc(VertexValues[5], VertexValues[5], 0));
-            VertexValues[6].AddArc(new Arc(VertexValues[5], VertexValues[6], 0));
-            VertexValues[6].AddArc(new Arc(VertexValues[5], VertexValues[7], 0));
+            VertexValues[6].AddArc(new Arc(VertexValues[6], VertexValues[0], 8));
+            VertexValues[6].AddArc(new Arc(VertexValues[6], VertexValues[1], 0));
+            VertexValues[6].AddArc(new Arc(VertexValues[6], VertexValues[2], 0));
+            VertexValues[6].AddArc(new Arc(VertexValues[6], VertexValues[3], 0));
+            VertexValues[6].AddArc(new Arc(VertexValues[6], VertexValues[4], 5));
+            VertexValues[6].AddArc(new Arc(VertexValues[6], VertexValues[5], 0));
+            VertexValues[6].AddArc(new Arc(VertexValues[6], VertexValues[6], 0));
+            VertexValues[6].AddArc(new Arc(VertexValues[6], VertexValues[7], 0));
             #endregion
 
             // Arcos (Aristas) de la sucursal 8.
             #region Arcos sucursal 8
-            VertexValues[7].AddArc(new Arc(VertexValues[5], VertexValues[0], 0));
-            VertexValues[7].AddArc(new Arc(VertexValues[5], VertexValues[1], 0));
-            VertexValues[7].AddArc(new Arc(VertexValues[5], VertexValues[2], 9));
-            VertexValues[7].AddArc(new Arc(VertexValues[5], VertexValues[3], 0));
-            VertexValues[7].AddArc(new Arc(VertexValues[5], VertexValues[4], 2));
-            VertexValues[7].AddArc(new Arc(VertexValues[5], VertexValues[5], 0));
-            VertexValues[7].AddArc(new Arc(VertexValues[5], VertexValues[6], 0));
-            VertexValues[7].AddArc(new Arc(VertexValues[5], VertexValues[7], 0));
+            VertexValues[7].AddArc(new Arc(VertexValues[7], VertexValues[0], 0));
+            VertexValues[7].AddArc(new Arc(VertexValues[7], VertexValues[1], 0));
+            VertexValues[7].AddArc(new Arc(VertexValues[7], VertexValues[2], 9));
+            VertexValues[7].AddArc(new Arc(VertexValues[7], VertexValues[3], 0));
+            VertexValues[7].AddArc(new Arc(VertexValues[7], VertexValues[4], 2));
+            VertexValues[7].AddArc(new Arc(VertexValues[7], VertexValues[5], 0));
+            VertexValues[7].AddArc(new Arc(VertexValues[7], VertexValues[6], 0));
+            VertexValues[7].AddArc(new Arc(VertexValues[7], VertexValues[7], 0));
             #endregion
+
 
             foreach (var distances in VertexValues[0].ArcsList)
             {
