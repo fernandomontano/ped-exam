@@ -53,6 +53,7 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnConsultar = new System.Windows.Forms.Button();
+            this.btnReturn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -128,7 +129,7 @@
             this.txtAddress.Location = new System.Drawing.Point(550, 284);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(289, 30);
-            this.txtAddress.TabIndex = 5;
+            this.txtAddress.TabIndex = 2;
             // 
             // txtCode
             // 
@@ -136,7 +137,7 @@
             this.txtCode.Location = new System.Drawing.Point(550, 214);
             this.txtCode.Name = "txtCode";
             this.txtCode.Size = new System.Drawing.Size(289, 30);
-            this.txtCode.TabIndex = 7;
+            this.txtCode.TabIndex = 1;
             // 
             // label4
             // 
@@ -155,7 +156,7 @@
             this.txtResponsible.Location = new System.Drawing.Point(550, 352);
             this.txtResponsible.Name = "txtResponsible";
             this.txtResponsible.Size = new System.Drawing.Size(289, 30);
-            this.txtResponsible.TabIndex = 9;
+            this.txtResponsible.TabIndex = 3;
             // 
             // label5
             // 
@@ -174,7 +175,8 @@
             this.txtContact.Location = new System.Drawing.Point(550, 426);
             this.txtContact.Name = "txtContact";
             this.txtContact.Size = new System.Drawing.Size(289, 30);
-            this.txtContact.TabIndex = 11;
+            this.txtContact.TabIndex = 4;
+            this.txtContact.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtContact_KeyPress);
             // 
             // label6
             // 
@@ -193,7 +195,8 @@
             this.txtEmail.Location = new System.Drawing.Point(550, 502);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(289, 30);
-            this.txtEmail.TabIndex = 13;
+            this.txtEmail.TabIndex = 5;
+            this.txtEmail.Leave += new System.EventHandler(this.txtEmail_Leave);
             // 
             // label7
             // 
@@ -211,7 +214,7 @@
             this.btnContinue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(53)))), ((int)(((byte)(63)))));
             this.btnContinue.Font = new System.Drawing.Font("Segoe UI Variable Display", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnContinue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(236)))), ((int)(((byte)(225)))));
-            this.btnContinue.Location = new System.Drawing.Point(601, 556);
+            this.btnContinue.Location = new System.Drawing.Point(690, 556);
             this.btnContinue.Name = "btnContinue";
             this.btnContinue.Size = new System.Drawing.Size(146, 67);
             this.btnContinue.TabIndex = 14;
@@ -303,7 +306,7 @@
             this.btnConsultar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(53)))), ((int)(((byte)(63)))));
             this.btnConsultar.Font = new System.Drawing.Font("Segoe UI Variable Display", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnConsultar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(236)))), ((int)(((byte)(225)))));
-            this.btnConsultar.Location = new System.Drawing.Point(601, 556);
+            this.btnConsultar.Location = new System.Drawing.Point(690, 556);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(146, 67);
             this.btnConsultar.TabIndex = 23;
@@ -312,11 +315,25 @@
             this.btnConsultar.Visible = false;
             this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
+            // btnReturn
+            // 
+            this.btnReturn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(88)))), ((int)(((byte)(80)))));
+            this.btnReturn.Font = new System.Drawing.Font("Segoe UI Variable Display", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnReturn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(236)))), ((int)(((byte)(225)))));
+            this.btnReturn.Location = new System.Drawing.Point(506, 556);
+            this.btnReturn.Name = "btnReturn";
+            this.btnReturn.Size = new System.Drawing.Size(146, 67);
+            this.btnReturn.TabIndex = 24;
+            this.btnReturn.Text = "Sucursal anterior";
+            this.btnReturn.UseVisualStyleBackColor = false;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
+            // 
             // OfficeSignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1260, 675);
+            this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.btnConsultar);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.pictureBox7);
@@ -366,6 +383,7 @@
             this.Controls.SetChildIndex(this.pictureBox7, 0);
             this.Controls.SetChildIndex(this.panel3, 0);
             this.Controls.SetChildIndex(this.btnConsultar, 0);
+            this.Controls.SetChildIndex(this.btnReturn, 0);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -406,5 +424,6 @@
         private PictureBox pictureBox7;
         private Panel panel3;
         private Button btnConsultar;
+        private Button btnReturn;
     }
 }

@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -15,7 +16,7 @@ namespace Exercise3
     {
         public static Hashtable AdjacencyHash = new();
         public static Vertex[] VertexValues = new Vertex[8];
-        public static Graph GraphValues = new Graph();
+        public static Graph GraphValues = new();
         public List<string> IdValues = new();
 
         public int I = 0;
@@ -29,8 +30,9 @@ namespace Exercise3
         {
             try
             {
+                
                 if (txtAddress.Text == "" || txtCode.Text == "" || txtContact.Text == "" || txtEmail.Text == "" ||
-                    txtResponsible.Text == "")
+                    txtResponsible.Text == "" || txtCode.Text == "a")
                 {
                     MessageBox.Show("Lo siento, debes llenar todos los campos antes de darle continuar.", "Error",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -46,7 +48,7 @@ namespace Exercise3
                     VertexValues[I] = new Vertex(new Office(txtAddress.Text, txtCode.Text, txtResponsible.Text,
                         int.Parse(txtContact.Text), txtEmail.Text));
 
-                    MessageBox.Show($"Valores añadidos con éxito a la Sucursal N° {I + 1}!", "Exito",
+                    MessageBox.Show($"Valores añadidos o actualizados con éxito a la Sucursal N° {I + 1}!", "Exito",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     Iterator();
@@ -61,15 +63,12 @@ namespace Exercise3
             }
 
         }
-
         private void Iterator()
         {
             if (I == 8)
             {
-                CreateArcs();
                 btnContinue.Visible = false;
                 btnConsultar.Visible = true;
-
                 // añado los valores de mis vértices al grafo, lo pude haber hecho directamente a la hora de pedir los datos pero, considero que es un poco más cómodo todos de una vez.
                 for (int i = 0; i <= 7; i++)
                     GraphValues.AddVertex(VertexValues[i]);
@@ -78,7 +77,11 @@ namespace Exercise3
             {
                 I++;
                 if (I != 8)
+                {
                     lblSucursal.Text = $"Sucursal N° {I + 1}";
+                    Clear();
+                }
+
             }
 
         }
@@ -188,9 +191,101 @@ namespace Exercise3
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
+            CreateArcs();
             var enterConsult = new Consult();
             enterConsult.Show();
             this.Hide();
+        }
+
+        private void txtContact_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //condicion para solo números
+            if (char.IsDigit(e.KeyChar))
+                e.Handled = false;
+            //para tecla backspace
+            else if (char.IsControl(e.KeyChar))
+                e.Handled = false;
+            /*verifica que pueda ingresar punto y también que solo pueda 
+           ingresar un punto*/
+            else if ((e.KeyChar == '.') && (!txtContact.Text.Contains(".")))
+                e.Handled = false;
+            //si no se cumple nada de lo anterior entonces que no lo deje pasar
+            else
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se admiten datos numéricos", "Validación de números", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        public bool ValidateEmail(string email)
+        {
+            //cadena o expresion regular que verifica a un formato de correo electrónico
+            var expression = @"^([a-zA-Z0-9_\-])([a-zA-Z0-9_\-\.]*)@(\[((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\.){3}|((([a-zA-Z0-9\-]+)\.)+))([a-zA-Z]{2,}|(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\])$";
+
+            if (Regex.IsMatch(email, expression))
+            {
+                //verifica que la direccion corresponda y que la longitud de la cadena no esté vacía
+                if (Regex.Replace(email, expression, string.Empty).Length == 0)
+                    return true;
+                return false;
+            }
+            return false;
+        }
+
+        private void txtEmail_Leave(object sender, EventArgs e)
+        {
+            if (ValidateEmail(txtEmail.Text)) {}
+                //si es correcto no debe hacer nada
+            else
+            {
+                MessageBox.Show("Dirección de correo no válida", "Validación de correo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtEmail.Clear(); // selecciona todo lo de la casilla 
+            }
+        }
+
+        private void Clear()
+        {
+            txtCode.Clear();
+            txtEmail.Clear();
+            txtAddress.Clear();
+            txtResponsible.Clear();
+            txtContact.Clear();
+        }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            if (I > 0 && I != 8)
+            {
+                DialogResult dr = MessageBox.Show("Si regresas, perderás todos los datos de las sucursales siguientes a tu sucursal de destino", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+
+                if (dr != DialogResult.Yes) return;
+
+                I -= 2;
+                Iterator();
+                txtContact.Text = VertexValues[I].Value.ContactNumber.ToString();
+                txtAddress.Text = VertexValues[I].Value.Address;
+                txtCode.Text = VertexValues[I].Value.IdCode;
+                txtEmail.Text = VertexValues[I].Value.EmailAddress;
+                txtResponsible.Text = VertexValues[I].Value.ResponsableName;
+
+                IdValues.Remove(VertexValues[I].Value.IdCode);
+            }
+            else if (I == 8)
+            {
+                I -= 2;
+                Iterator();
+                txtContact.Text = VertexValues[I].Value.ContactNumber.ToString();
+                txtAddress.Text = VertexValues[I].Value.Address;
+                txtCode.Text = VertexValues[I].Value.IdCode;
+                txtEmail.Text = VertexValues[I].Value.EmailAddress;
+                txtResponsible.Text = VertexValues[I].Value.ResponsableName;
+
+                IdValues.Remove(VertexValues[I].Value.IdCode);
+                btnContinue.Visible = true;
+                btnConsultar.Visible = false;
+            }
+            else
+                MessageBox.Show("No puedes regresar a un lugar donde no has estado, ¿paradoja?", "Wow", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            
         }
     }
 }
