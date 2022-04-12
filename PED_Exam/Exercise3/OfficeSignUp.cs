@@ -19,7 +19,7 @@ namespace Exercise3
         public static Graph GraphValues = new();
         public List<string> IdValues = new();
 
-        public int I = 0;
+        public static int I = 0;
 
         public OfficeSignUp()
         {

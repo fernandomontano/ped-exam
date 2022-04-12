@@ -97,5 +97,12 @@ namespace Exercise3
             groupBox4.Visible = false;
             groupBox5.Visible = false;
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            var enterOffice = new OfficeSignUp();
+            enterOffice.Show();
+            this.Hide();
+        }
     }
 }
