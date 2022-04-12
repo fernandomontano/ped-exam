@@ -72,9 +72,7 @@ namespace Exercise3
 
                 // añado los valores de mis vértices al grafo, lo pude haber hecho directamente a la hora de pedir los datos pero, considero que es un poco más cómodo todos de una vez.
                 for (int i = 0; i <= 7; i++)
-                {
                     GraphValues.AddVertex(VertexValues[i]);
-                }
             }
             else
             {
@@ -89,6 +87,7 @@ namespace Exercise3
         {
             // Arcos (Aristas) de la sucursal 1. (de acuerdo al gráfico)
             #region Arcos sucursal 1
+            VertexValues[0].AddArc(new Arc(VertexValues[0], VertexValues[0], 0)); // 2
             VertexValues[0].AddArc(new Arc(VertexValues[0], VertexValues[1], 3)); // 2
             VertexValues[0].AddArc(new Arc(VertexValues[0], VertexValues[2], 0)); // 3
             VertexValues[0].AddArc(new Arc(VertexValues[0], VertexValues[3], 0)); // 4
@@ -183,9 +182,6 @@ namespace Exercise3
 
             for (var i = 0; i < 8; i++)
                 AdjacencyHash.Add(VertexValues[i].Value.IdCode, VertexValues[i].ArcsList);
-
-            
-
         }
 
         private bool Valid() => IdValues.All(id => txtCode.Text != id);

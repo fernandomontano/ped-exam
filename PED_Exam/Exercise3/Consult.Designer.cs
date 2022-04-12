@@ -36,65 +36,65 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblDistance1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.txtCode = new System.Windows.Forms.TextBox();
+            this.txtBox11 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.txtBox12 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtResponsible = new System.Windows.Forms.TextBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtBox13 = new System.Windows.Forms.TextBox();
+            this.txtBox15 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtContact = new System.Windows.Forms.TextBox();
+            this.txtBox14 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lblDistance2 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBox21 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtBox22 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtBox23 = new System.Windows.Forms.TextBox();
+            this.txtBox25 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtBox24 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label17 = new System.Windows.Forms.Label();
+            this.lblDistance3 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtBox31 = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtBox32 = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtBox33 = new System.Windows.Forms.TextBox();
+            this.txtBox35 = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txtBox34 = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label23 = new System.Windows.Forms.Label();
+            this.lblDistance4 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txtBox41 = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txtBox42 = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.txtBox43 = new System.Windows.Forms.TextBox();
+            this.txtBox45 = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.txtBox44 = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.label29 = new System.Windows.Forms.Label();
+            this.lblDistance5 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.txtBox51 = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.txtBox52 = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.txtBox53 = new System.Windows.Forms.TextBox();
+            this.txtBox55 = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
-            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.txtBox54 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -188,17 +188,17 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.lblDistance1);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.txtCode);
+            this.groupBox1.Controls.Add(this.txtBox11);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.txtAddress);
+            this.groupBox1.Controls.Add(this.txtBox12);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.txtResponsible);
-            this.groupBox1.Controls.Add(this.txtEmail);
+            this.groupBox1.Controls.Add(this.txtBox13);
+            this.groupBox1.Controls.Add(this.txtBox15);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.txtContact);
+            this.groupBox1.Controls.Add(this.txtBox14);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(88)))), ((int)(((byte)(80)))));
             this.groupBox1.Location = new System.Drawing.Point(25, 271);
@@ -207,15 +207,16 @@
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Visible = false;
             // 
-            // label1
+            // lblDistance1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(48, 323);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 22);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Distancia: x (km)";
+            this.lblDistance1.AutoSize = true;
+            this.lblDistance1.Location = new System.Drawing.Point(48, 323);
+            this.lblDistance1.Name = "lblDistance1";
+            this.lblDistance1.Size = new System.Drawing.Size(137, 22);
+            this.lblDistance1.TabIndex = 0;
+            this.lblDistance1.Text = "Distancia: x (km)";
             // 
             // label9
             // 
@@ -228,13 +229,14 @@
             this.label9.TabIndex = 32;
             this.label9.Text = "Código:";
             // 
-            // txtCode
+            // txtBox11
             // 
-            this.txtCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCode.Location = new System.Drawing.Point(13, 52);
-            this.txtCode.Name = "txtCode";
-            this.txtCode.Size = new System.Drawing.Size(243, 30);
-            this.txtCode.TabIndex = 33;
+            this.txtBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBox11.Location = new System.Drawing.Point(13, 52);
+            this.txtBox11.Name = "txtBox11";
+            this.txtBox11.ReadOnly = true;
+            this.txtBox11.Size = new System.Drawing.Size(243, 30);
+            this.txtBox11.TabIndex = 33;
             // 
             // label10
             // 
@@ -247,13 +249,14 @@
             this.label10.TabIndex = 30;
             this.label10.Text = "Dirección:";
             // 
-            // txtAddress
+            // txtBox12
             // 
-            this.txtAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtAddress.Location = new System.Drawing.Point(13, 110);
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(243, 30);
-            this.txtAddress.TabIndex = 31;
+            this.txtBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBox12.Location = new System.Drawing.Point(13, 110);
+            this.txtBox12.Name = "txtBox12";
+            this.txtBox12.ReadOnly = true;
+            this.txtBox12.Size = new System.Drawing.Size(243, 30);
+            this.txtBox12.TabIndex = 31;
             // 
             // label5
             // 
@@ -266,21 +269,23 @@
             this.label5.TabIndex = 34;
             this.label5.Text = "Responsable:";
             // 
-            // txtResponsible
+            // txtBox13
             // 
-            this.txtResponsible.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtResponsible.Location = new System.Drawing.Point(13, 174);
-            this.txtResponsible.Name = "txtResponsible";
-            this.txtResponsible.Size = new System.Drawing.Size(243, 30);
-            this.txtResponsible.TabIndex = 35;
+            this.txtBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBox13.Location = new System.Drawing.Point(13, 174);
+            this.txtBox13.Name = "txtBox13";
+            this.txtBox13.ReadOnly = true;
+            this.txtBox13.Size = new System.Drawing.Size(243, 30);
+            this.txtBox13.TabIndex = 35;
             // 
-            // txtEmail
+            // txtBox15
             // 
-            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtEmail.Location = new System.Drawing.Point(13, 290);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(243, 30);
-            this.txtEmail.TabIndex = 39;
+            this.txtBox15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBox15.Location = new System.Drawing.Point(13, 290);
+            this.txtBox15.Name = "txtBox15";
+            this.txtBox15.ReadOnly = true;
+            this.txtBox15.Size = new System.Drawing.Size(243, 30);
+            this.txtBox15.TabIndex = 39;
             // 
             // label6
             // 
@@ -304,27 +309,28 @@
             this.label7.TabIndex = 38;
             this.label7.Text = "Correo:";
             // 
-            // txtContact
+            // txtBox14
             // 
-            this.txtContact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtContact.Location = new System.Drawing.Point(13, 234);
-            this.txtContact.Name = "txtContact";
-            this.txtContact.Size = new System.Drawing.Size(243, 30);
-            this.txtContact.TabIndex = 37;
+            this.txtBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBox14.Location = new System.Drawing.Point(13, 234);
+            this.txtBox14.Name = "txtBox14";
+            this.txtBox14.ReadOnly = true;
+            this.txtBox14.Size = new System.Drawing.Size(243, 30);
+            this.txtBox14.TabIndex = 37;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Controls.Add(this.lblDistance2);
             this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.txtBox21);
             this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.txtBox22);
             this.groupBox2.Controls.Add(this.label14);
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.textBox4);
+            this.groupBox2.Controls.Add(this.txtBox23);
+            this.groupBox2.Controls.Add(this.txtBox25);
             this.groupBox2.Controls.Add(this.label15);
             this.groupBox2.Controls.Add(this.label16);
-            this.groupBox2.Controls.Add(this.textBox5);
+            this.groupBox2.Controls.Add(this.txtBox24);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(88)))), ((int)(((byte)(80)))));
             this.groupBox2.Location = new System.Drawing.Point(300, 271);
@@ -333,15 +339,16 @@
             this.groupBox2.TabIndex = 26;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "groupBox2";
+            this.groupBox2.Visible = false;
             // 
-            // label11
+            // lblDistance2
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(48, 318);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(137, 22);
-            this.label11.TabIndex = 40;
-            this.label11.Text = "Distancia: x (km)";
+            this.lblDistance2.AutoSize = true;
+            this.lblDistance2.Location = new System.Drawing.Point(48, 318);
+            this.lblDistance2.Name = "lblDistance2";
+            this.lblDistance2.Size = new System.Drawing.Size(137, 22);
+            this.lblDistance2.TabIndex = 40;
+            this.lblDistance2.Text = "Distancia: x (km)";
             // 
             // label12
             // 
@@ -354,13 +361,14 @@
             this.label12.TabIndex = 43;
             this.label12.Text = "Código:";
             // 
-            // textBox1
+            // txtBox21
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(13, 47);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(243, 30);
-            this.textBox1.TabIndex = 44;
+            this.txtBox21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBox21.Location = new System.Drawing.Point(13, 47);
+            this.txtBox21.Name = "txtBox21";
+            this.txtBox21.ReadOnly = true;
+            this.txtBox21.Size = new System.Drawing.Size(243, 30);
+            this.txtBox21.TabIndex = 44;
             // 
             // label13
             // 
@@ -373,13 +381,14 @@
             this.label13.TabIndex = 41;
             this.label13.Text = "Dirección:";
             // 
-            // textBox2
+            // txtBox22
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(13, 105);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(243, 30);
-            this.textBox2.TabIndex = 42;
+            this.txtBox22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBox22.Location = new System.Drawing.Point(13, 105);
+            this.txtBox22.Name = "txtBox22";
+            this.txtBox22.ReadOnly = true;
+            this.txtBox22.Size = new System.Drawing.Size(243, 30);
+            this.txtBox22.TabIndex = 42;
             // 
             // label14
             // 
@@ -392,21 +401,23 @@
             this.label14.TabIndex = 45;
             this.label14.Text = "Responsable:";
             // 
-            // textBox3
+            // txtBox23
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Location = new System.Drawing.Point(13, 169);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(243, 30);
-            this.textBox3.TabIndex = 46;
+            this.txtBox23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBox23.Location = new System.Drawing.Point(13, 169);
+            this.txtBox23.Name = "txtBox23";
+            this.txtBox23.ReadOnly = true;
+            this.txtBox23.Size = new System.Drawing.Size(243, 30);
+            this.txtBox23.TabIndex = 46;
             // 
-            // textBox4
+            // txtBox25
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Location = new System.Drawing.Point(13, 285);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(243, 30);
-            this.textBox4.TabIndex = 50;
+            this.txtBox25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBox25.Location = new System.Drawing.Point(13, 285);
+            this.txtBox25.Name = "txtBox25";
+            this.txtBox25.ReadOnly = true;
+            this.txtBox25.Size = new System.Drawing.Size(243, 30);
+            this.txtBox25.TabIndex = 50;
             // 
             // label15
             // 
@@ -430,27 +441,28 @@
             this.label16.TabIndex = 49;
             this.label16.Text = "Correo:";
             // 
-            // textBox5
+            // txtBox24
             // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Location = new System.Drawing.Point(13, 229);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(243, 30);
-            this.textBox5.TabIndex = 48;
+            this.txtBox24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBox24.Location = new System.Drawing.Point(13, 229);
+            this.txtBox24.Name = "txtBox24";
+            this.txtBox24.ReadOnly = true;
+            this.txtBox24.Size = new System.Drawing.Size(243, 30);
+            this.txtBox24.TabIndex = 48;
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.label17);
+            this.groupBox3.Controls.Add(this.lblDistance3);
             this.groupBox3.Controls.Add(this.label18);
-            this.groupBox3.Controls.Add(this.textBox6);
+            this.groupBox3.Controls.Add(this.txtBox31);
             this.groupBox3.Controls.Add(this.label19);
-            this.groupBox3.Controls.Add(this.textBox7);
+            this.groupBox3.Controls.Add(this.txtBox32);
             this.groupBox3.Controls.Add(this.label20);
-            this.groupBox3.Controls.Add(this.textBox8);
-            this.groupBox3.Controls.Add(this.textBox9);
+            this.groupBox3.Controls.Add(this.txtBox33);
+            this.groupBox3.Controls.Add(this.txtBox35);
             this.groupBox3.Controls.Add(this.label21);
             this.groupBox3.Controls.Add(this.label22);
-            this.groupBox3.Controls.Add(this.textBox10);
+            this.groupBox3.Controls.Add(this.txtBox34);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(88)))), ((int)(((byte)(80)))));
             this.groupBox3.Location = new System.Drawing.Point(568, 271);
@@ -459,15 +471,16 @@
             this.groupBox3.TabIndex = 27;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "groupBox3";
+            this.groupBox3.Visible = false;
             // 
-            // label17
+            // lblDistance3
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(48, 318);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(137, 22);
-            this.label17.TabIndex = 40;
-            this.label17.Text = "Distancia: x (km)";
+            this.lblDistance3.AutoSize = true;
+            this.lblDistance3.Location = new System.Drawing.Point(48, 318);
+            this.lblDistance3.Name = "lblDistance3";
+            this.lblDistance3.Size = new System.Drawing.Size(137, 22);
+            this.lblDistance3.TabIndex = 40;
+            this.lblDistance3.Text = "Distancia: x (km)";
             // 
             // label18
             // 
@@ -480,13 +493,14 @@
             this.label18.TabIndex = 43;
             this.label18.Text = "Código:";
             // 
-            // textBox6
+            // txtBox31
             // 
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Location = new System.Drawing.Point(13, 47);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(243, 30);
-            this.textBox6.TabIndex = 44;
+            this.txtBox31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBox31.Location = new System.Drawing.Point(13, 47);
+            this.txtBox31.Name = "txtBox31";
+            this.txtBox31.ReadOnly = true;
+            this.txtBox31.Size = new System.Drawing.Size(243, 30);
+            this.txtBox31.TabIndex = 44;
             // 
             // label19
             // 
@@ -499,13 +513,14 @@
             this.label19.TabIndex = 41;
             this.label19.Text = "Dirección:";
             // 
-            // textBox7
+            // txtBox32
             // 
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox7.Location = new System.Drawing.Point(13, 105);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(243, 30);
-            this.textBox7.TabIndex = 42;
+            this.txtBox32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBox32.Location = new System.Drawing.Point(13, 105);
+            this.txtBox32.Name = "txtBox32";
+            this.txtBox32.ReadOnly = true;
+            this.txtBox32.Size = new System.Drawing.Size(243, 30);
+            this.txtBox32.TabIndex = 42;
             // 
             // label20
             // 
@@ -518,21 +533,23 @@
             this.label20.TabIndex = 45;
             this.label20.Text = "Responsable:";
             // 
-            // textBox8
+            // txtBox33
             // 
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox8.Location = new System.Drawing.Point(13, 169);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(243, 30);
-            this.textBox8.TabIndex = 46;
+            this.txtBox33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBox33.Location = new System.Drawing.Point(13, 169);
+            this.txtBox33.Name = "txtBox33";
+            this.txtBox33.ReadOnly = true;
+            this.txtBox33.Size = new System.Drawing.Size(243, 30);
+            this.txtBox33.TabIndex = 46;
             // 
-            // textBox9
+            // txtBox35
             // 
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox9.Location = new System.Drawing.Point(13, 285);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(243, 30);
-            this.textBox9.TabIndex = 50;
+            this.txtBox35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBox35.Location = new System.Drawing.Point(13, 285);
+            this.txtBox35.Name = "txtBox35";
+            this.txtBox35.ReadOnly = true;
+            this.txtBox35.Size = new System.Drawing.Size(243, 30);
+            this.txtBox35.TabIndex = 50;
             // 
             // label21
             // 
@@ -556,27 +573,28 @@
             this.label22.TabIndex = 49;
             this.label22.Text = "Correo:";
             // 
-            // textBox10
+            // txtBox34
             // 
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox10.Location = new System.Drawing.Point(13, 229);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(243, 30);
-            this.textBox10.TabIndex = 48;
+            this.txtBox34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBox34.Location = new System.Drawing.Point(13, 229);
+            this.txtBox34.Name = "txtBox34";
+            this.txtBox34.ReadOnly = true;
+            this.txtBox34.Size = new System.Drawing.Size(243, 30);
+            this.txtBox34.TabIndex = 48;
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.label23);
+            this.groupBox4.Controls.Add(this.lblDistance4);
             this.groupBox4.Controls.Add(this.label24);
-            this.groupBox4.Controls.Add(this.textBox11);
+            this.groupBox4.Controls.Add(this.txtBox41);
             this.groupBox4.Controls.Add(this.label25);
-            this.groupBox4.Controls.Add(this.textBox12);
+            this.groupBox4.Controls.Add(this.txtBox42);
             this.groupBox4.Controls.Add(this.label26);
-            this.groupBox4.Controls.Add(this.textBox13);
-            this.groupBox4.Controls.Add(this.textBox14);
+            this.groupBox4.Controls.Add(this.txtBox43);
+            this.groupBox4.Controls.Add(this.txtBox45);
             this.groupBox4.Controls.Add(this.label27);
             this.groupBox4.Controls.Add(this.label28);
-            this.groupBox4.Controls.Add(this.textBox15);
+            this.groupBox4.Controls.Add(this.txtBox44);
             this.groupBox4.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(88)))), ((int)(((byte)(80)))));
             this.groupBox4.Location = new System.Drawing.Point(836, 271);
@@ -585,15 +603,16 @@
             this.groupBox4.TabIndex = 28;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "groupBox4";
+            this.groupBox4.Visible = false;
             // 
-            // label23
+            // lblDistance4
             // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(48, 318);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(137, 22);
-            this.label23.TabIndex = 40;
-            this.label23.Text = "Distancia: x (km)";
+            this.lblDistance4.AutoSize = true;
+            this.lblDistance4.Location = new System.Drawing.Point(48, 318);
+            this.lblDistance4.Name = "lblDistance4";
+            this.lblDistance4.Size = new System.Drawing.Size(137, 22);
+            this.lblDistance4.TabIndex = 40;
+            this.lblDistance4.Text = "Distancia: x (km)";
             // 
             // label24
             // 
@@ -606,13 +625,14 @@
             this.label24.TabIndex = 43;
             this.label24.Text = "Código:";
             // 
-            // textBox11
+            // txtBox41
             // 
-            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox11.Location = new System.Drawing.Point(13, 47);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(243, 30);
-            this.textBox11.TabIndex = 44;
+            this.txtBox41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBox41.Location = new System.Drawing.Point(13, 47);
+            this.txtBox41.Name = "txtBox41";
+            this.txtBox41.ReadOnly = true;
+            this.txtBox41.Size = new System.Drawing.Size(243, 30);
+            this.txtBox41.TabIndex = 44;
             // 
             // label25
             // 
@@ -625,13 +645,14 @@
             this.label25.TabIndex = 41;
             this.label25.Text = "Dirección:";
             // 
-            // textBox12
+            // txtBox42
             // 
-            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox12.Location = new System.Drawing.Point(13, 105);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(243, 30);
-            this.textBox12.TabIndex = 42;
+            this.txtBox42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBox42.Location = new System.Drawing.Point(13, 105);
+            this.txtBox42.Name = "txtBox42";
+            this.txtBox42.ReadOnly = true;
+            this.txtBox42.Size = new System.Drawing.Size(243, 30);
+            this.txtBox42.TabIndex = 42;
             // 
             // label26
             // 
@@ -644,21 +665,23 @@
             this.label26.TabIndex = 45;
             this.label26.Text = "Responsable:";
             // 
-            // textBox13
+            // txtBox43
             // 
-            this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox13.Location = new System.Drawing.Point(13, 169);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(243, 30);
-            this.textBox13.TabIndex = 46;
+            this.txtBox43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBox43.Location = new System.Drawing.Point(13, 169);
+            this.txtBox43.Name = "txtBox43";
+            this.txtBox43.ReadOnly = true;
+            this.txtBox43.Size = new System.Drawing.Size(243, 30);
+            this.txtBox43.TabIndex = 46;
             // 
-            // textBox14
+            // txtBox45
             // 
-            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox14.Location = new System.Drawing.Point(13, 285);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(243, 30);
-            this.textBox14.TabIndex = 50;
+            this.txtBox45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBox45.Location = new System.Drawing.Point(13, 285);
+            this.txtBox45.Name = "txtBox45";
+            this.txtBox45.ReadOnly = true;
+            this.txtBox45.Size = new System.Drawing.Size(243, 30);
+            this.txtBox45.TabIndex = 50;
             // 
             // label27
             // 
@@ -682,27 +705,28 @@
             this.label28.TabIndex = 49;
             this.label28.Text = "Correo:";
             // 
-            // textBox15
+            // txtBox44
             // 
-            this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox15.Location = new System.Drawing.Point(13, 229);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(243, 30);
-            this.textBox15.TabIndex = 48;
+            this.txtBox44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBox44.Location = new System.Drawing.Point(13, 229);
+            this.txtBox44.Name = "txtBox44";
+            this.txtBox44.ReadOnly = true;
+            this.txtBox44.Size = new System.Drawing.Size(243, 30);
+            this.txtBox44.TabIndex = 48;
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.label29);
+            this.groupBox5.Controls.Add(this.lblDistance5);
             this.groupBox5.Controls.Add(this.label30);
-            this.groupBox5.Controls.Add(this.textBox16);
+            this.groupBox5.Controls.Add(this.txtBox51);
             this.groupBox5.Controls.Add(this.label31);
-            this.groupBox5.Controls.Add(this.textBox17);
+            this.groupBox5.Controls.Add(this.txtBox52);
             this.groupBox5.Controls.Add(this.label32);
-            this.groupBox5.Controls.Add(this.textBox18);
-            this.groupBox5.Controls.Add(this.textBox19);
+            this.groupBox5.Controls.Add(this.txtBox53);
+            this.groupBox5.Controls.Add(this.txtBox55);
             this.groupBox5.Controls.Add(this.label33);
             this.groupBox5.Controls.Add(this.label34);
-            this.groupBox5.Controls.Add(this.textBox20);
+            this.groupBox5.Controls.Add(this.txtBox54);
             this.groupBox5.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.groupBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(88)))), ((int)(((byte)(80)))));
             this.groupBox5.Location = new System.Drawing.Point(1111, 271);
@@ -711,15 +735,16 @@
             this.groupBox5.TabIndex = 29;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "groupBox5";
+            this.groupBox5.Visible = false;
             // 
-            // label29
+            // lblDistance5
             // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(48, 318);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(137, 22);
-            this.label29.TabIndex = 40;
-            this.label29.Text = "Distancia: x (km)";
+            this.lblDistance5.AutoSize = true;
+            this.lblDistance5.Location = new System.Drawing.Point(48, 318);
+            this.lblDistance5.Name = "lblDistance5";
+            this.lblDistance5.Size = new System.Drawing.Size(137, 22);
+            this.lblDistance5.TabIndex = 40;
+            this.lblDistance5.Text = "Distancia: x (km)";
             // 
             // label30
             // 
@@ -732,13 +757,14 @@
             this.label30.TabIndex = 43;
             this.label30.Text = "Código:";
             // 
-            // textBox16
+            // txtBox51
             // 
-            this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox16.Location = new System.Drawing.Point(13, 47);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(243, 30);
-            this.textBox16.TabIndex = 44;
+            this.txtBox51.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBox51.Location = new System.Drawing.Point(13, 47);
+            this.txtBox51.Name = "txtBox51";
+            this.txtBox51.ReadOnly = true;
+            this.txtBox51.Size = new System.Drawing.Size(243, 30);
+            this.txtBox51.TabIndex = 44;
             // 
             // label31
             // 
@@ -751,13 +777,14 @@
             this.label31.TabIndex = 41;
             this.label31.Text = "Dirección:";
             // 
-            // textBox17
+            // txtBox52
             // 
-            this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox17.Location = new System.Drawing.Point(13, 105);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(243, 30);
-            this.textBox17.TabIndex = 42;
+            this.txtBox52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBox52.Location = new System.Drawing.Point(13, 105);
+            this.txtBox52.Name = "txtBox52";
+            this.txtBox52.ReadOnly = true;
+            this.txtBox52.Size = new System.Drawing.Size(243, 30);
+            this.txtBox52.TabIndex = 42;
             // 
             // label32
             // 
@@ -770,21 +797,23 @@
             this.label32.TabIndex = 45;
             this.label32.Text = "Responsable:";
             // 
-            // textBox18
+            // txtBox53
             // 
-            this.textBox18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox18.Location = new System.Drawing.Point(13, 169);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(243, 30);
-            this.textBox18.TabIndex = 46;
+            this.txtBox53.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBox53.Location = new System.Drawing.Point(13, 169);
+            this.txtBox53.Name = "txtBox53";
+            this.txtBox53.ReadOnly = true;
+            this.txtBox53.Size = new System.Drawing.Size(243, 30);
+            this.txtBox53.TabIndex = 46;
             // 
-            // textBox19
+            // txtBox55
             // 
-            this.textBox19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox19.Location = new System.Drawing.Point(13, 285);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(243, 30);
-            this.textBox19.TabIndex = 50;
+            this.txtBox55.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBox55.Location = new System.Drawing.Point(13, 285);
+            this.txtBox55.Name = "txtBox55";
+            this.txtBox55.ReadOnly = true;
+            this.txtBox55.Size = new System.Drawing.Size(243, 30);
+            this.txtBox55.TabIndex = 50;
             // 
             // label33
             // 
@@ -808,13 +837,14 @@
             this.label34.TabIndex = 49;
             this.label34.Text = "Correo:";
             // 
-            // textBox20
+            // txtBox54
             // 
-            this.textBox20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox20.Location = new System.Drawing.Point(13, 229);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(243, 30);
-            this.textBox20.TabIndex = 48;
+            this.txtBox54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBox54.Location = new System.Drawing.Point(13, 229);
+            this.txtBox54.Name = "txtBox54";
+            this.txtBox54.ReadOnly = true;
+            this.txtBox54.Size = new System.Drawing.Size(243, 30);
+            this.txtBox54.TabIndex = 48;
             // 
             // Consult
             // 
@@ -877,60 +907,60 @@
         private GroupBox groupBox3;
         private GroupBox groupBox4;
         private GroupBox groupBox5;
-        private Label label1;
+        private Label lblDistance1;
         private Label label9;
-        private TextBox txtCode;
+        private TextBox txtBox11;
         private Label label10;
-        private TextBox txtAddress;
+        private TextBox txtBox12;
         private Label label5;
-        private TextBox txtResponsible;
-        private TextBox txtEmail;
+        private TextBox txtBox13;
+        private TextBox txtBox15;
         private Label label6;
         private Label label7;
-        private TextBox txtContact;
-        private Label label11;
+        private TextBox txtBox14;
+        private Label lblDistance2;
         private Label label12;
-        private TextBox textBox1;
+        private TextBox txtBox21;
         private Label label13;
-        private TextBox textBox2;
+        private TextBox txtBox22;
         private Label label14;
-        private TextBox textBox3;
-        private TextBox textBox4;
+        private TextBox txtBox23;
+        private TextBox txtBox25;
         private Label label15;
         private Label label16;
-        private TextBox textBox5;
-        private Label label17;
+        private TextBox txtBox24;
+        private Label lblDistance3;
         private Label label18;
-        private TextBox textBox6;
+        private TextBox txtBox31;
         private Label label19;
-        private TextBox textBox7;
+        private TextBox txtBox32;
         private Label label20;
-        private TextBox textBox8;
-        private TextBox textBox9;
+        private TextBox txtBox33;
+        private TextBox txtBox35;
         private Label label21;
         private Label label22;
-        private TextBox textBox10;
-        private Label label23;
+        private TextBox txtBox34;
+        private Label lblDistance4;
         private Label label24;
-        private TextBox textBox11;
+        private TextBox txtBox41;
         private Label label25;
-        private TextBox textBox12;
+        private TextBox txtBox42;
         private Label label26;
-        private TextBox textBox13;
-        private TextBox textBox14;
+        private TextBox txtBox43;
+        private TextBox txtBox45;
         private Label label27;
         private Label label28;
-        private TextBox textBox15;
-        private Label label29;
+        private TextBox txtBox44;
+        private Label lblDistance5;
         private Label label30;
-        private TextBox textBox16;
+        private TextBox txtBox51;
         private Label label31;
-        private TextBox textBox17;
+        private TextBox txtBox52;
         private Label label32;
-        private TextBox textBox18;
-        private TextBox textBox19;
+        private TextBox txtBox53;
+        private TextBox txtBox55;
         private Label label33;
         private Label label34;
-        private TextBox textBox20;
+        private TextBox txtBox54;
     }
 }
