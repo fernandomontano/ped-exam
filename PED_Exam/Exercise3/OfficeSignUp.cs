@@ -15,7 +15,7 @@ namespace Exercise3
     public partial class OfficeSignUp : Base
     {
         public static Hashtable AdjacencyHash = new();
-        public static Vertex[] VertexValues = new Vertex[8];
+        public static Vertex?[] VertexValues = new Vertex[8];
         public static Graph GraphValues = new();
         public List<string> IdValues = new();
         public List<string> Addresses = new();
@@ -42,9 +42,9 @@ namespace Exercise3
             {
                 if (txtAddress.Text == "" || txtCode.Text == "" || txtContact.Text == "" || txtEmail.Text == "" ||
                     txtResponsible.Text == "" || txtContact.Text.Length != 8)
-                    MessageBox.Show("Lo siento, debes llenar al completo todos los campos antes de darle continuar.", "Error",
+                    MessageBox.Show("Lo siento, debes llenar al completo todos los campos antes de darle continuar.", "Error", // Verifica que los campos estén llenos.
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
-                else if (!Valid())
+                else if (!Valid()) // verificar que Id no exista y que dirección no exista.
                     MessageBox.Show("Lo siento, el código y la dirección de cada sucursal debe ser único.", "Error",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 else if (I < 8)
@@ -85,7 +85,7 @@ namespace Exercise3
                 if (I != 8)
                 {
                     lblSucursal.Text = $"Sucursal N° {I + 1}";
-                    Clear();
+                    RefreshData();
                 }
             }
             txtCode.Focus();
@@ -188,6 +188,7 @@ namespace Exercise3
             VertexValues[7].AddArc(new Arc(VertexValues[7], VertexValues[7], 0));
             #endregion
 
+            // key: s1 , values: 0, 0, 0, 3, 8, 10
             for (var i = 0; i < 8; i++)
                 AdjacencyHash.Add(VertexValues[i].Value.IdCode, VertexValues[i].ArcsList);
         }
@@ -238,29 +239,26 @@ namespace Exercise3
 
         private void btnReturn_Click(object sender, EventArgs e)
         {
-            if (I > 0 && I != 8)
+            switch (I)
             {
-                DialogResult dr = MessageBox.Show("Si regresas, perderás todos los datos de las sucursales siguientes a tu sucursal de destino", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                case > 0 when I != 8:
+                    I -= 2;
+                    Iterator();
+                    RefreshData();
+                    break;
+                case 8:
+                    I -= 2;
+                    Iterator();
+                    RefreshData();
+                    GraphValues.VertexList.Clear();
 
-                if (dr != DialogResult.Yes) return;
-
-                I -= 2;
-                Iterator();
-                RefreshData();
+                    btnContinue.Visible = true;
+                    btnConsultar.Visible = false;
+                    break;
+                default:
+                    MessageBox.Show("No puedes regresar a un lugar donde no has estado, ¿paradoja?", "Wow", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    break;
             }
-            else if (I == 8)
-            {
-                I -= 2;
-                Iterator();
-                RefreshData();
-                GraphValues.VertexList.Clear();
-
-                btnContinue.Visible = true;
-                btnConsultar.Visible = false;
-            }
-            else
-                MessageBox.Show("No puedes regresar a un lugar donde no has estado, ¿paradoja?", "Wow", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            
         }
 
         private void txtResponsible_KeyPress(object sender, KeyPressEventArgs e)
@@ -284,6 +282,12 @@ namespace Exercise3
 
         private void RefreshData()
         {
+            if (VertexValues[I] == null)
+            {
+                Clear();
+                return;
+            }
+
             txtContact.Text = VertexValues[I].Value.ContactNumber.ToString();
             txtAddress.Text = VertexValues[I].Value.Address;
             txtCode.Text = VertexValues[I].Value.IdCode;
