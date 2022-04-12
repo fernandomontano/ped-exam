@@ -1,0 +1,17 @@
+D:\Documents\GitHub\ped-exam\PED_Exam\PED_Exam\bin\Debug\net6.0-windows\PED_Exam.exe
+D:\Documents\GitHub\ped-exam\PED_Exam\PED_Exam\bin\Debug\net6.0-windows\PED_Exam.deps.json
+D:\Documents\GitHub\ped-exam\PED_Exam\PED_Exam\bin\Debug\net6.0-windows\PED_Exam.runtimeconfig.json
+D:\Documents\GitHub\ped-exam\PED_Exam\PED_Exam\bin\Debug\net6.0-windows\PED_Exam.dll
+D:\Documents\GitHub\ped-exam\PED_Exam\PED_Exam\bin\Debug\net6.0-windows\PED_Exam.pdb
+D:\Documents\GitHub\ped-exam\PED_Exam\PED_Exam\obj\Debug\net6.0-windows\PED_Exam.csproj.AssemblyReference.cache
+D:\Documents\GitHub\ped-exam\PED_Exam\PED_Exam\obj\Debug\net6.0-windows\PED_Exam.Form1.resources
+D:\Documents\GitHub\ped-exam\PED_Exam\PED_Exam\obj\Debug\net6.0-windows\PED_Exam.csproj.GenerateResource.cache
+D:\Documents\GitHub\ped-exam\PED_Exam\PED_Exam\obj\Debug\net6.0-windows\PED_Exam.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\GitHub\ped-exam\PED_Exam\PED_Exam\obj\Debug\net6.0-windows\PED_Exam.AssemblyInfoInputs.cache
+D:\Documents\GitHub\ped-exam\PED_Exam\PED_Exam\obj\Debug\net6.0-windows\PED_Exam.AssemblyInfo.cs
+D:\Documents\GitHub\ped-exam\PED_Exam\PED_Exam\obj\Debug\net6.0-windows\PED_Exam.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\ped-exam\PED_Exam\PED_Exam\obj\Debug\net6.0-windows\PED_Exam.dll
+D:\Documents\GitHub\ped-exam\PED_Exam\PED_Exam\obj\Debug\net6.0-windows\refint\PED_Exam.dll
+D:\Documents\GitHub\ped-exam\PED_Exam\PED_Exam\obj\Debug\net6.0-windows\PED_Exam.pdb
+D:\Documents\GitHub\ped-exam\PED_Exam\PED_Exam\obj\Debug\net6.0-windows\PED_Exam.genruntimeconfig.cache
+D:\Documents\GitHub\ped-exam\PED_Exam\PED_Exam\obj\Debug\net6.0-windows\ref\PED_Exam.dll

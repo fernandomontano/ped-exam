@@ -39,7 +39,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtResponsible = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtContact = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -54,6 +53,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnConsultar = new System.Windows.Forms.Button();
             this.btnReturn = new System.Windows.Forms.Button();
+            this.txtContact = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -157,6 +157,7 @@
             this.txtResponsible.Name = "txtResponsible";
             this.txtResponsible.Size = new System.Drawing.Size(289, 30);
             this.txtResponsible.TabIndex = 3;
+            this.txtResponsible.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtResponsible_KeyPress);
             // 
             // label5
             // 
@@ -168,15 +169,6 @@
             this.label5.Size = new System.Drawing.Size(252, 24);
             this.label5.TabIndex = 8;
             this.label5.Text = "Responsable de cada bodega:";
-            // 
-            // txtContact
-            // 
-            this.txtContact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtContact.Location = new System.Drawing.Point(550, 426);
-            this.txtContact.Name = "txtContact";
-            this.txtContact.Size = new System.Drawing.Size(289, 30);
-            this.txtContact.TabIndex = 4;
-            this.txtContact.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtContact_KeyPress);
             // 
             // label6
             // 
@@ -328,11 +320,21 @@
             this.btnReturn.UseVisualStyleBackColor = false;
             this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
             // 
+            // txtContact
+            // 
+            this.txtContact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtContact.Location = new System.Drawing.Point(550, 430);
+            this.txtContact.Mask = "00000000";
+            this.txtContact.Name = "txtContact";
+            this.txtContact.Size = new System.Drawing.Size(289, 30);
+            this.txtContact.TabIndex = 4;
+            // 
             // OfficeSignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1260, 675);
+            this.Controls.Add(this.txtContact);
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.btnConsultar);
             this.Controls.Add(this.panel3);
@@ -346,7 +348,6 @@
             this.Controls.Add(this.btnContinue);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.txtContact);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtResponsible);
             this.Controls.Add(this.label5);
@@ -370,7 +371,6 @@
             this.Controls.SetChildIndex(this.label5, 0);
             this.Controls.SetChildIndex(this.txtResponsible, 0);
             this.Controls.SetChildIndex(this.label6, 0);
-            this.Controls.SetChildIndex(this.txtContact, 0);
             this.Controls.SetChildIndex(this.label7, 0);
             this.Controls.SetChildIndex(this.txtEmail, 0);
             this.Controls.SetChildIndex(this.btnContinue, 0);
@@ -384,6 +384,7 @@
             this.Controls.SetChildIndex(this.panel3, 0);
             this.Controls.SetChildIndex(this.btnConsultar, 0);
             this.Controls.SetChildIndex(this.btnReturn, 0);
+            this.Controls.SetChildIndex(this.txtContact, 0);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -410,7 +411,6 @@
         private Label label4;
         private TextBox txtResponsible;
         private Label label5;
-        private TextBox txtContact;
         private Label label6;
         private TextBox txtEmail;
         private Label label7;
@@ -425,5 +425,6 @@
         private Panel panel3;
         private Button btnConsultar;
         private Button btnReturn;
+        private MaskedTextBox txtContact;
     }
 }

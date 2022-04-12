@@ -103,6 +103,8 @@ namespace Exercise3
             var enterOffice = new OfficeSignUp();
             enterOffice.Show();
             this.Hide();
+
+            OfficeSignUp.AdjacencyHash.Clear();
         }
     }
 }
