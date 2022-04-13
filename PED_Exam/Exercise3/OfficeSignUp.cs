@@ -95,7 +95,7 @@ namespace Exercise3
         {
             // Arcos (Aristas) de la sucursal 1. (de acuerdo al gráfico)
             #region Arcos sucursal 1
-            VertexValues[0].AddArc(new Arc(VertexValues[0], VertexValues[0], 0)); // 2
+            VertexValues[0].AddArc(new Arc(VertexValues[0], VertexValues[0], 0)); // 1
             VertexValues[0].AddArc(new Arc(VertexValues[0], VertexValues[1], 3)); // 2
             VertexValues[0].AddArc(new Arc(VertexValues[0], VertexValues[2], 0)); // 3
             VertexValues[0].AddArc(new Arc(VertexValues[0], VertexValues[3], 0)); // 4
