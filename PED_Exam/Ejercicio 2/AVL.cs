@@ -30,7 +30,8 @@ namespace Ejercicio_2
         }
         public void preordenrecursivo()
         {
-            Console.WriteLine("Pre-orden");
+            Console.WriteLine("\tPre-orden");
+            Console.Write("  ");
             preorden(raiz);
         }
         public void preorden(AVL raiz)
@@ -44,7 +45,8 @@ namespace Ejercicio_2
         }
         public void inordenrecursivo()
         {
-            Console.WriteLine("In-orden");
+            Console.WriteLine("\tIn-orden");
+            Console.Write("  ");
             inorden(raiz);
         }
         public void inorden(AVL raiz)
@@ -58,7 +60,8 @@ namespace Ejercicio_2
         }
         public void postordenrecursivo()
         {
-            Console.WriteLine("Post-orden");
+            Console.WriteLine("\tPost-orden");
+            Console.Write("  ");
             postorden(raiz);
         }
         public void postorden(AVL raiz)
@@ -70,7 +73,29 @@ namespace Ejercicio_2
                 Console.Write(raiz.valor.ToString() + " - ");
             }
         }
+        public void dibujararbol()
+        {
+            Console.WriteLine("Dibujo de árbol (horizontalmente)");
+            dibujar(raiz, 0);
+        }
+        public void dibujar(AVL arbol, int cont)
+        {
+            if (arbol == null)
+            {
+                return;
+            }
+            else
+            {
+                dibujar(arbol.nododerecho, cont + 1);
+                for (int i = 0; i < cont; i++)
+                {
+                    Console.Write("\t");
+                }
+                Console.WriteLine(arbol.valor);
+                dibujar(arbol.nodoizquierdo, cont + 1);
+            }
 
+        }
         public AVL (int valornuevo, AVL izquierdo, AVL derecho, AVL padre)
         {
             valor = valornuevo;
