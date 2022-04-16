@@ -284,7 +284,7 @@ namespace Exercise3
         {
             if (VertexValues[I] == null)
             {
-                // Clear();
+                Clear();
                 return;
             }
 
