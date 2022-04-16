@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,11 +15,11 @@ namespace Exercise3
 {
     public partial class OfficeSignUp : Base
     {
-        public static Hashtable AdjacencyHash = new();
-        public static Vertex?[] VertexValues = new Vertex[8];
-        public static Graph GraphValues = new();
-        public List<string> IdValues = new();
-        public List<string> Addresses = new();
+        public static Hashtable? AdjacencyHash = new(); // tabla de adyacencia.
+        public static Vertex?[] VertexValues = new Vertex[8]; // añadi los valores de los vertices en un array ya que son 8.
+        public static Graph GraphValues = new(); // valores del grafo, static para poder acceder a ellos en otra clase.
+        public List<string> IdValues = new(); // valores del Id, me servirá para hacer mi búsqueda más fácil (no era necesario)
+        public List<string> Addresses = new(); // valores de las direcciones, me servirá para hacer mi búsqueda más fácil (no era necesario)
 
         public static int I = 0;
 
@@ -27,6 +28,7 @@ namespace Exercise3
             InitializeComponent();
             txtCode.Focus();
             lblSucursal.Text = $"Sucursal N° {I + 1}";
+
             if (I == 8)
             {
                 I = 7;
@@ -49,8 +51,7 @@ namespace Exercise3
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 else if (I < 8)
                 {
-                    VertexValues[I] = new Vertex(new Office(txtAddress.Text, txtCode.Text, txtResponsible.Text,
-                        int.Parse(txtContact.Text), txtEmail.Text));
+                    VertexValues[I] = new Vertex(new Office(txtAddress.Text, txtCode.Text, txtResponsible.Text, int.Parse(txtContact.Text), txtEmail.Text));
 
                     IdValues.Add(txtCode.Text);
                     Addresses.Add(txtAddress.Text);
@@ -76,14 +77,16 @@ namespace Exercise3
                 btnContinue.Visible = false;
                 btnConsultar.Visible = true;
                 // añado los valores de mis vértices al grafo, lo pude haber hecho directamente a la hora de pedir los datos pero, considero que es un poco más cómodo todos de una vez.
-                for (int i = 0; i <= 7; i++)
-                    GraphValues.AddVertex(VertexValues[i]);
+                for (var i = 0; i <= 7; i++)
+                    GraphValues.AddVertex(VertexValues[i]!);
             }
             else
             {
                 I++;
                 if (I != 8)
                 {
+                    if (AdjacencyHash != null)
+                        AdjacencyHash.Clear();
                     lblSucursal.Text = $"Sucursal N° {I + 1}";
                     RefreshData();
                 }
@@ -113,6 +116,7 @@ namespace Exercise3
             VertexValues[1].AddArc(new Arc(VertexValues[1], VertexValues[3], 4)); // 2 a 4.
             VertexValues[1].AddArc(new Arc(VertexValues[1], VertexValues[4], 0)); // 2 a 5.
             VertexValues[1].AddArc(new Arc(VertexValues[1], VertexValues[5], 0)); // 2 a 6.
+            VertexValues[1].AddArc(new Arc(VertexValues[1], VertexValues[6], 0)); // 2 a 8.
             VertexValues[1].AddArc(new Arc(VertexValues[1], VertexValues[7], 0)); // 2 a 8.
             #endregion
 
@@ -195,7 +199,6 @@ namespace Exercise3
 
         // utilizando LINQ, buscamos si el valor a insertar (Id o dirección) ya existía. (debe ser única)
         private bool Valid() => IdValues.All(id => txtCode.Text != id) && Addresses.All(address => txtAddress.Text != address);
-
         private void btnConsultar_Click(object sender, EventArgs e)
         {
             CreateArcs();
@@ -227,7 +230,6 @@ namespace Exercise3
                 txtEmail.Clear(); // selecciona todo lo de la casilla 
             }
         }
-
         private void Clear()
         {
             txtCode.Clear();
@@ -236,7 +238,6 @@ namespace Exercise3
             txtResponsible.Clear();
             txtContact.Clear();
         }
-
         private void btnReturn_Click(object sender, EventArgs e)
         {
             switch (I)
@@ -244,6 +245,7 @@ namespace Exercise3
                 case > 0 when I != 8:
                     I -= 2;
                     Iterator();
+                    AdjacencyHash?.Clear();
                     RefreshData();
                     break;
                 case 8:
@@ -260,7 +262,6 @@ namespace Exercise3
                     break;
             }
         }
-
         private void txtResponsible_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (char.IsLetter(e.KeyChar))
@@ -279,12 +280,11 @@ namespace Exercise3
                     MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
-
         private void RefreshData()
         {
             if (VertexValues[I] == null)
             {
-                Clear();
+                // Clear();
                 return;
             }
 
