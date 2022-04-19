@@ -85,7 +85,6 @@ namespace Ejericio2
             List<int> ClearList = StaticArray.ToList();
             ClearList.Clear();
             StaticArray=ClearList.ToArray();
-            Array.Resize<int>(ref StaticArray, 1);
             t = 0;
             label2.Visible=false;
             label4.Visible=false;

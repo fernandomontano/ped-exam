@@ -214,9 +214,9 @@
             // pictureBox3
             // 
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.Location = new System.Drawing.Point(0, 541);
+            this.pictureBox3.Location = new System.Drawing.Point(0, 536);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(300, 278);
+            this.pictureBox3.Size = new System.Drawing.Size(300, 283);
             this.pictureBox3.TabIndex = 8;
             this.pictureBox3.TabStop = false;
             // 
