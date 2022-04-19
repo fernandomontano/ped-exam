@@ -238,10 +238,12 @@ namespace Exercise3
             txtResponsible.Clear();
             txtContact.Clear();
         }
+        // al hacer click al boton return
         private void btnReturn_Click(object sender, EventArgs e)
         {
             switch (I)
             {
+                // como el iterador aumenta uno, le resto 2 y luego hago referencia al iterador.
                 case > 0 when I != 8:
                     I -= 2;
                     Iterator();
