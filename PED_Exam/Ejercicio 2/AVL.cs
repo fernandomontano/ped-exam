@@ -6,16 +6,21 @@ namespace Ejercicio_2
 {
     class AVL
     {
+        //declarando nodos y variables 
         public int valor;
         public AVL nodoizquierdo;
         public AVL nododerecho;
         public AVL nodopadre;
         public int altura;
+        AVL raiz = null;
+
+        //constructor
         public AVL()
         {
 
         }
-        AVL raiz = null;
+
+        //método auxiliar para insertar dato
         public void Insertar1(int dato)
         {
 
@@ -25,77 +30,11 @@ namespace Ejercicio_2
             }
             else
             {
-                raiz = raiz.Insertar(dato, raiz);
+                raiz = raiz.Insertar(dato, raiz); //recursividad para insertar los nodos
             }
         }
-        public void preordenrecursivo()
-        {
-            Console.WriteLine("\tPre-orden");
-            Console.Write("  ");
-            preorden(raiz);
-        }
-        public void preorden(AVL raiz)
-        {
-            if (raiz != null)
-            {
-                Console.Write(raiz.valor.ToString() +" - ");
-                preorden(raiz.nodoizquierdo);
-                preorden(raiz.nododerecho);
-            }
-        }
-        public void inordenrecursivo()
-        {
-            Console.WriteLine("\tIn-orden");
-            Console.Write("  ");
-            inorden(raiz);
-        }
-        public void inorden(AVL raiz)
-        {
-            if (raiz != null)
-            {
-                inorden(raiz.nodoizquierdo);
-                Console.Write(raiz.valor.ToString() + " - ");
-                inorden(raiz.nododerecho);
-            }
-        }
-        public void postordenrecursivo()
-        {
-            Console.WriteLine("\tPost-orden");
-            Console.Write("  ");
-            postorden(raiz);
-        }
-        public void postorden(AVL raiz)
-        {
-            if (raiz != null)
-            {
-                postorden(raiz.nodoizquierdo);
-                postorden(raiz.nododerecho);
-                Console.Write(raiz.valor.ToString() + " - ");
-            }
-        }
-        public void dibujararbol()
-        {
-            Console.WriteLine("Dibujo de árbol (horizontalmente)");
-            dibujar(raiz, 0);
-        }
-        public void dibujar(AVL arbol, int cont)
-        {
-            if (arbol == null)
-            {
-                return;
-            }
-            else
-            {
-                dibujar(arbol.nododerecho, cont + 1);
-                for (int i = 0; i < cont; i++)
-                {
-                    Console.Write("\t");
-                }
-                Console.WriteLine(arbol.valor);
-                dibujar(arbol.nodoizquierdo, cont + 1);
-            }
-
-        }
+        
+        //constructor que recibe parámetros para la inserción
         public AVL (int valornuevo, AVL izquierdo, AVL derecho, AVL padre)
         {
             valor = valornuevo;
@@ -104,26 +43,32 @@ namespace Ejercicio_2
             nodopadre = padre;
             altura = 0;
         }
+
+        //Inserta y equilibra los nodos en el árbol
         public AVL Insertar(int pvalornuevo, AVL praiz)
         {
             if (praiz == null)
             {
-                praiz = new AVL(pvalornuevo, null, null, null);
+                praiz = new AVL(pvalornuevo, null, null, null); //si el árbol está vació
             }
             else if (pvalornuevo < praiz.valor)
             {
-                praiz.nodoizquierdo = Insertar(pvalornuevo, praiz.nodoizquierdo);
+                //condición para subárbol izquierdo
+                praiz.nodoizquierdo = Insertar(pvalornuevo, praiz.nodoizquierdo); 
             }
             else if (pvalornuevo > praiz.valor)
             {
+                //condición para subárbol derecho
                 praiz.nododerecho = Insertar(pvalornuevo, praiz.nododerecho);
             }
             else
             {
                 Console.WriteLine("Ya existe el valor");
             }
+            //los ifs se aseguran que las alturas no tengan una diferencia mayor a dos
             if (alturas(praiz.nodoizquierdo) - alturas(praiz.nododerecho) == 2)
             {
+                //realiza las rotaciones si el árbol se desequilibra con la nueva inserción
                 if (pvalornuevo < praiz.nodoizquierdo.valor) praiz = rotacionizquierdasimple(praiz);
                 else praiz = rotacionizquierdadoble(praiz);
             }
@@ -136,15 +81,18 @@ namespace Ejercicio_2
             return praiz;
         }
 
+        //devuelve la altura máxima de las ramas
         private static int max(int lhs, int rhs)
         {
             return lhs > rhs ? lhs : rhs;
         }
+        //devuelve la altura actual de la rama
         private static int alturas (AVL raiz)
         {
             return raiz == null ? -1 : raiz.altura;
         }
  
+        //Rotaciones para equilibrar el árbol
         private static AVL rotacionizquierdasimple(AVL k2)
         {
             AVL k1 = k2.nodoizquierdo;
@@ -173,37 +121,78 @@ namespace Ejercicio_2
             k4.nododerecho = rotacionizquierdasimple(k4.nododerecho);
             return rotacionderechasimple(k4);
         }
-        public int getaltura(AVL nodoactual)
+
+        public void preordenrecursivo()
         {
-            if (nodoactual == null)
-            {
-                return 0;
-            }
-            else
-            {
-                return 1 + Math.Max(getaltura(nodoactual.nodoizquierdo), getaltura(nodoactual.nododerecho));
+            Console.WriteLine("\tPre-orden");
+            Console.Write("  ");
+            preorden(raiz);
+        }
+        public void preorden(AVL raiz)
+        {
+            if (raiz != null)
+            {   
+                //recorrido pre orden: raíz, subárbol izquierdo, subárbol derecho
+                Console.Write(raiz.valor.ToString() + " - ");
+                preorden(raiz.nodoizquierdo);
+                preorden(raiz.nododerecho);
             }
         }
-        public void buscar(int valorbuscar, AVL raiz)
+        public void inordenrecursivo()
+        {
+            Console.WriteLine("\tIn-orden");
+            Console.Write("  ");
+            inorden(raiz);
+        }
+        public void inorden(AVL raiz)
         {
             if (raiz != null)
             {
-                if (valorbuscar < raiz.valor)
-                {
-                    buscar(valorbuscar, raiz.nodoizquierdo);
-                }
-                else
-                {
-                    if (valorbuscar > raiz.valor)
-                    {
-                        buscar(valorbuscar, raiz.nododerecho);
-                    }
-                }
+                //recorrido in orden: subárbol izquierdo, raiz, subárbol derecho
+                inorden(raiz.nodoizquierdo);
+                Console.Write(raiz.valor.ToString() + " - ");
+                inorden(raiz.nododerecho);
+            }
+        }
+        public void postordenrecursivo()
+        {
+            Console.WriteLine("\tPost-orden");
+            Console.Write("  ");
+            postorden(raiz);
+        }
+        public void postorden(AVL raiz)
+        {
+            if (raiz != null)
+            {
+                //recorrido in orden: subárbol izquierdo, subárbol derecho, raíz
+                postorden(raiz.nodoizquierdo);
+                postorden(raiz.nododerecho);
+                Console.Write(raiz.valor.ToString() + " - ");
+            }
+        }
+        public void dibujararbol()
+        {
+            Console.WriteLine("Dibujo de árbol (horizontalmente)");
+            dibujar(raiz, 0);
+        }
+        //método recursivo para dibujar el árbol: primero el subárbol derecho, luego la raíz, luego el izquierdo
+        public void dibujar(AVL arbol, int cont)
+        {
+            if (arbol == null)
+            {
+                return;
             }
             else
             {
-                Console.WriteLine("Valor no encontrado");
-            }  
+                dibujar(arbol.nododerecho, cont + 1);
+                for (int i = 0; i < cont; i++)
+                {
+                    Console.Write("\t");
+                }
+                Console.WriteLine(arbol.valor);
+                dibujar(arbol.nodoizquierdo, cont + 1);
+            }
+
         }
     }
 }
