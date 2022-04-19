@@ -38,3 +38,23 @@ D:\Documents\GitHub\ped-exam\PED_Exam\Exercise3\obj\Debug\net6.0-windows\refint\
 D:\Documents\GitHub\ped-exam\PED_Exam\Exercise3\obj\Debug\net6.0-windows\Exercise3.pdb
 D:\Documents\GitHub\ped-exam\PED_Exam\Exercise3\obj\Debug\net6.0-windows\Exercise3.genruntimeconfig.cache
 D:\Documents\GitHub\ped-exam\PED_Exam\Exercise3\obj\Debug\net6.0-windows\ref\Exercise3.dll
+D:\Documents\PED - G01L - Examen 2\ped-exam\PED_Exam\Exercise3\bin\Debug\net6.0-windows\Exercise3.exe
+D:\Documents\PED - G01L - Examen 2\ped-exam\PED_Exam\Exercise3\bin\Debug\net6.0-windows\Exercise3.deps.json
+D:\Documents\PED - G01L - Examen 2\ped-exam\PED_Exam\Exercise3\bin\Debug\net6.0-windows\Exercise3.runtimeconfig.json
+D:\Documents\PED - G01L - Examen 2\ped-exam\PED_Exam\Exercise3\bin\Debug\net6.0-windows\Exercise3.dll
+D:\Documents\PED - G01L - Examen 2\ped-exam\PED_Exam\Exercise3\bin\Debug\net6.0-windows\Exercise3.pdb
+D:\Documents\PED - G01L - Examen 2\ped-exam\PED_Exam\Exercise3\obj\Debug\net6.0-windows\Exercise3.csproj.AssemblyReference.cache
+D:\Documents\PED - G01L - Examen 2\ped-exam\PED_Exam\Exercise3\obj\Debug\net6.0-windows\Exercise3.Base.resources
+D:\Documents\PED - G01L - Examen 2\ped-exam\PED_Exam\Exercise3\obj\Debug\net6.0-windows\Exercise3.Consult.resources
+D:\Documents\PED - G01L - Examen 2\ped-exam\PED_Exam\Exercise3\obj\Debug\net6.0-windows\Exercise3.OfficeSignUp.resources
+D:\Documents\PED - G01L - Examen 2\ped-exam\PED_Exam\Exercise3\obj\Debug\net6.0-windows\Exercise3.Properties.Resources.resources
+D:\Documents\PED - G01L - Examen 2\ped-exam\PED_Exam\Exercise3\obj\Debug\net6.0-windows\Exercise3.csproj.GenerateResource.cache
+D:\Documents\PED - G01L - Examen 2\ped-exam\PED_Exam\Exercise3\obj\Debug\net6.0-windows\Exercise3.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\PED - G01L - Examen 2\ped-exam\PED_Exam\Exercise3\obj\Debug\net6.0-windows\Exercise3.AssemblyInfoInputs.cache
+D:\Documents\PED - G01L - Examen 2\ped-exam\PED_Exam\Exercise3\obj\Debug\net6.0-windows\Exercise3.AssemblyInfo.cs
+D:\Documents\PED - G01L - Examen 2\ped-exam\PED_Exam\Exercise3\obj\Debug\net6.0-windows\Exercise3.csproj.CoreCompileInputs.cache
+D:\Documents\PED - G01L - Examen 2\ped-exam\PED_Exam\Exercise3\obj\Debug\net6.0-windows\Exercise3.dll
+D:\Documents\PED - G01L - Examen 2\ped-exam\PED_Exam\Exercise3\obj\Debug\net6.0-windows\refint\Exercise3.dll
+D:\Documents\PED - G01L - Examen 2\ped-exam\PED_Exam\Exercise3\obj\Debug\net6.0-windows\Exercise3.pdb
+D:\Documents\PED - G01L - Examen 2\ped-exam\PED_Exam\Exercise3\obj\Debug\net6.0-windows\Exercise3.genruntimeconfig.cache
+D:\Documents\PED - G01L - Examen 2\ped-exam\PED_Exam\Exercise3\obj\Debug\net6.0-windows\ref\Exercise3.dll

@@ -1,14 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30907.101
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PED_Exam", "PED_Exam\PED_Exam.csproj", "{1FC357F0-8F63-4787-9014-BA9BF462A629}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio 2", "Ejercicio 2\Ejercicio 2.csproj", "{D07B569F-D802-451B-A618-4F3AD777F687}"
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejericio2", "Ejericio2\Ejericio2.csproj", "{6C5EA141-4574-4EF7-BB10-6A5F00946132}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise1", "Ejercicio 2\Exercise1.csproj", "{D07B569F-D802-451B-A618-4F3AD777F687}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise3", "Exercise3\Exercise3.csproj", "{8FE24CF9-5ADC-4159-AD62-81101B3684E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise2", "Ejericio2\Exercise2.csproj", "{6C5EA141-4574-4EF7-BB10-6A5F00946132}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise3", "Exercise3\Exercise3.csproj", "{8FE24CF9-5ADC-4159-AD62-81101B3684E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

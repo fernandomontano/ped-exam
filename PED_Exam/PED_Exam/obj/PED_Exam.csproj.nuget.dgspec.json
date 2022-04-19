@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documents\\GitHub\\ped-exam\\PED_Exam\\PED_Exam\\PED_Exam.csproj": {}
+    "D:\\Documents\\PED - G01L - Examen 2\\ped-exam\\PED_Exam\\PED_Exam\\PED_Exam.csproj": {}
   },
   "projects": {
-    "D:\\Documents\\GitHub\\ped-exam\\PED_Exam\\PED_Exam\\PED_Exam.csproj": {
+    "D:\\Documents\\PED - G01L - Examen 2\\ped-exam\\PED_Exam\\PED_Exam\\PED_Exam.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\GitHub\\ped-exam\\PED_Exam\\PED_Exam\\PED_Exam.csproj",
+        "projectUniqueName": "D:\\Documents\\PED - G01L - Examen 2\\ped-exam\\PED_Exam\\PED_Exam\\PED_Exam.csproj",
         "projectName": "PED_Exam",
-        "projectPath": "D:\\Documents\\GitHub\\ped-exam\\PED_Exam\\PED_Exam\\PED_Exam.csproj",
+        "projectPath": "D:\\Documents\\PED - G01L - Examen 2\\ped-exam\\PED_Exam\\PED_Exam\\PED_Exam.csproj",
         "packagesPath": "C:\\Users\\ferna\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\GitHub\\ped-exam\\PED_Exam\\PED_Exam\\obj\\",
+        "outputPath": "D:\\Documents\\PED - G01L - Examen 2\\ped-exam\\PED_Exam\\PED_Exam\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

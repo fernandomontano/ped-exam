@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documents\\PED - G01L - Examen 2\\ped-exam\\PED_Exam\\Exercise3\\Exercise3.csproj": {}
+    "D:\\Documents\\PED - G01L - Examen 2\\ped-exam\\PED_Exam\\Ejercicio 2\\Ejercicio 2.csproj": {}
   },
   "projects": {
-    "D:\\Documents\\PED - G01L - Examen 2\\ped-exam\\PED_Exam\\Exercise3\\Exercise3.csproj": {
+    "D:\\Documents\\PED - G01L - Examen 2\\ped-exam\\PED_Exam\\Ejercicio 2\\Ejercicio 2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\PED - G01L - Examen 2\\ped-exam\\PED_Exam\\Exercise3\\Exercise3.csproj",
-        "projectName": "Exercise3",
-        "projectPath": "D:\\Documents\\PED - G01L - Examen 2\\ped-exam\\PED_Exam\\Exercise3\\Exercise3.csproj",
+        "projectUniqueName": "D:\\Documents\\PED - G01L - Examen 2\\ped-exam\\PED_Exam\\Ejercicio 2\\Ejercicio 2.csproj",
+        "projectName": "Ejercicio 2",
+        "projectPath": "D:\\Documents\\PED - G01L - Examen 2\\ped-exam\\PED_Exam\\Ejercicio 2\\Ejercicio 2.csproj",
         "packagesPath": "C:\\Users\\ferna\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\PED - G01L - Examen 2\\ped-exam\\PED_Exam\\Exercise3\\obj\\",
+        "outputPath": "D:\\Documents\\PED - G01L - Examen 2\\ped-exam\\PED_Exam\\Ejercicio 2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -56,9 +56,6 @@
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
-            },
-            "Microsoft.WindowsDesktop.App.WindowsForms": {
-              "privateAssets": "none"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"

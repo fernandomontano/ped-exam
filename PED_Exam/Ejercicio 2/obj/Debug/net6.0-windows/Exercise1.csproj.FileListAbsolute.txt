@@ -1,0 +1,15 @@
+D:\Documents\PED - G01L - Examen 2\ped-exam\PED_Exam\Ejercicio 2\bin\Debug\net6.0-windows\Exercise1.exe
+D:\Documents\PED - G01L - Examen 2\ped-exam\PED_Exam\Ejercicio 2\bin\Debug\net6.0-windows\Exercise1.deps.json
+D:\Documents\PED - G01L - Examen 2\ped-exam\PED_Exam\Ejercicio 2\bin\Debug\net6.0-windows\Exercise1.runtimeconfig.json
+D:\Documents\PED - G01L - Examen 2\ped-exam\PED_Exam\Ejercicio 2\bin\Debug\net6.0-windows\Exercise1.dll
+D:\Documents\PED - G01L - Examen 2\ped-exam\PED_Exam\Ejercicio 2\bin\Debug\net6.0-windows\Exercise1.pdb
+D:\Documents\PED - G01L - Examen 2\ped-exam\PED_Exam\Ejercicio 2\obj\Debug\net6.0-windows\Exercise1.csproj.AssemblyReference.cache
+D:\Documents\PED - G01L - Examen 2\ped-exam\PED_Exam\Ejercicio 2\obj\Debug\net6.0-windows\Exercise1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\PED - G01L - Examen 2\ped-exam\PED_Exam\Ejercicio 2\obj\Debug\net6.0-windows\Exercise1.AssemblyInfoInputs.cache
+D:\Documents\PED - G01L - Examen 2\ped-exam\PED_Exam\Ejercicio 2\obj\Debug\net6.0-windows\Exercise1.AssemblyInfo.cs
+D:\Documents\PED - G01L - Examen 2\ped-exam\PED_Exam\Ejercicio 2\obj\Debug\net6.0-windows\Exercise1.csproj.CoreCompileInputs.cache
+D:\Documents\PED - G01L - Examen 2\ped-exam\PED_Exam\Ejercicio 2\obj\Debug\net6.0-windows\Exercise1.dll
+D:\Documents\PED - G01L - Examen 2\ped-exam\PED_Exam\Ejercicio 2\obj\Debug\net6.0-windows\refint\Exercise1.dll
+D:\Documents\PED - G01L - Examen 2\ped-exam\PED_Exam\Ejercicio 2\obj\Debug\net6.0-windows\Exercise1.pdb
+D:\Documents\PED - G01L - Examen 2\ped-exam\PED_Exam\Ejercicio 2\obj\Debug\net6.0-windows\Exercise1.genruntimeconfig.cache
+D:\Documents\PED - G01L - Examen 2\ped-exam\PED_Exam\Ejercicio 2\obj\Debug\net6.0-windows\ref\Exercise1.dll

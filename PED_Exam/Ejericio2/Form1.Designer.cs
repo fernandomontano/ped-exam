@@ -121,7 +121,7 @@
             this.txtNumber.Location = new System.Drawing.Point(58, 67);
             this.txtNumber.Margin = new System.Windows.Forms.Padding(4);
             this.txtNumber.Name = "txtNumber";
-            this.txtNumber.Size = new System.Drawing.Size(194, 37);
+            this.txtNumber.Size = new System.Drawing.Size(194, 32);
             this.txtNumber.TabIndex = 0;
             // 
             // InitArr
@@ -134,9 +134,9 @@
             this.InitArr.Location = new System.Drawing.Point(0, 0);
             this.InitArr.MaximumSize = new System.Drawing.Size(1008, 40);
             this.InitArr.Name = "InitArr";
-            this.InitArr.Size = new System.Drawing.Size(95, 40);
+            this.InitArr.Size = new System.Drawing.Size(82, 34);
             this.InitArr.TabIndex = 2;
-            this.InitArr.Text = "HOAL";
+            this.InitArr.Text = "HOLA";
             this.InitArr.Visible = false;
             // 
             // label3
@@ -145,7 +145,7 @@
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Location = new System.Drawing.Point(327, 133);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(1023, 30);
+            this.label3.Size = new System.Drawing.Size(875, 25);
             this.label3.TabIndex = 3;
             this.label3.Text = "Inserta una serie de datos y presiona el botón \"Mostrar\" para ver el arreglo en f" +
     "orma ascendente.\r\n";
@@ -157,7 +157,7 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(119)))), ((int)(((byte)(94)))));
             this.label4.Location = new System.Drawing.Point(740, 398);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(184, 30);
+            this.label4.Size = new System.Drawing.Size(160, 25);
             this.label4.TabIndex = 4;
             this.label4.Text = "Montículo inicial";
             this.label4.Visible = false;
@@ -169,7 +169,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(119)))), ((int)(((byte)(94)))));
             this.label2.Location = new System.Drawing.Point(708, 606);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(268, 30);
+            this.label2.Size = new System.Drawing.Size(233, 25);
             this.label2.TabIndex = 5;
             this.label2.Text = "Arreglo Final (Min Heap)";
             this.label2.Visible = false;
@@ -184,9 +184,9 @@
             this.FinArr.Location = new System.Drawing.Point(0, 0);
             this.FinArr.MaximumSize = new System.Drawing.Size(1008, 40);
             this.FinArr.Name = "FinArr";
-            this.FinArr.Size = new System.Drawing.Size(95, 40);
+            this.FinArr.Size = new System.Drawing.Size(82, 34);
             this.FinArr.TabIndex = 6;
-            this.FinArr.Text = "HOAL";
+            this.FinArr.Text = "HOLA";
             this.FinArr.Visible = false;
             // 
             // label1
@@ -197,7 +197,7 @@
             this.label1.Location = new System.Drawing.Point(717, 20);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(276, 65);
+            this.label1.Size = new System.Drawing.Size(229, 54);
             this.label1.TabIndex = 0;
             this.label1.Text = "HEAPSORT";
             // 
@@ -257,7 +257,7 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 30F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1374, 813);
@@ -272,6 +272,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
